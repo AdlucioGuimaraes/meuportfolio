@@ -233,6 +233,7 @@ footer a{
 }
 @media (max-width: 500px){
     body{
+        text-align: center;
         background-color: black;
     }
     header{
