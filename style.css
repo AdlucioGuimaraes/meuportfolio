@@ -154,8 +154,7 @@ article a:hover{
 }
 .sb{
     text-align: center;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: block;
 }
 #projetos{
     text-align: center;
