@@ -235,6 +235,9 @@ footer a{
     body{
         background-color: black;
     }
+    header{
+        height: 665px;
+    }
     #logo{
         display: block;
         text-align: center;
