@@ -275,7 +275,7 @@ footer a{
     }
     #tecnologiasdiv{
         text-align: center;
-        grid-template-columns: 22% 22% 22% 22%;
+        grid-template-columns: 25% 25% 25% 25%;
     }
     .legenda{
         margin: 20px;
