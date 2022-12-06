@@ -231,7 +231,7 @@ footer a{
     border: 1px solid white;
     border-radius: 5px;
 }
-@media (max-width: 500px){
+@media (max-width: 600px){
     body{
         text-align: center;
         background-color: black;
