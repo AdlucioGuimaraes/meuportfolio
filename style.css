@@ -246,9 +246,14 @@ footer a{
     #logo img{
         border-radius: 0px;
     }
+    #meunome:hover{
+        text-shadow: 10px 10px 8px green;
+        font-size: 80px;
+        transition: 1s;
+    }
     #menu{
-        margin-top: -135px;
-        text-align: left;
+        margin-top: -130px;
+        text-align: right;
         width: 480px;
         font-size: 14px;
         padding: 0;
