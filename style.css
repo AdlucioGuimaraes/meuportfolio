@@ -253,7 +253,8 @@ footer a{
     }
     #menu{
         margin-top: -130px;
-        text-align: right;
+        float: left;
+        text-align: left;
         width: 480px;
         font-size: 14px;
         padding: 0;
