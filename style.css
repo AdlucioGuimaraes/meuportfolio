@@ -154,7 +154,7 @@ footer p{
 footer a{
     color: yellow;
 }
-@media(max-width: 1025px){
+@media(max-width: 500px){
     #container-header{
         display: block;
         text-align: center;
