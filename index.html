@@ -1,47 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Adlucio Guimarães</title>
 </head>
 <body>
     <header>
         <nav id="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#principal">Sobre mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#contato">Contatos</a></li>
-            </ul>
+            <a href="#contato">Contato</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#sobremim">Sobre mim</a>
+            <a href="">Home</a>
         </nav>
-        <div id="logo">
-            <div id="gridsaud">
-                <h1 id="saud"> <label id="ola"> Olá, <br> eu sou</label> <span id="meunome">Adlucio Guimarães</span></h1>
-                <h2 id="desen">desenvolvedor front-end e back-end</h2>
+        <div id="container-header">
+            <div class="nome-principal">
+                <h1 id="saud">Olá, eu sou <br><span id="meunome">Adlucio Guimarães</span></h1>
+                <h2 id="func">Desenvolvedor Front-end e Back-end</h2>
             </div>
-            <div><picture>
-                <source media="(max-width: 550px)" srcset="imagens/Adlucio-logo300.png" type="image/png">
-                <img id="img-logo" src="imagens/Adlucio-logo.png" alt="Logo"></picture></div>
-    </div>
-        
+            <picture>
+                <img src="imagens/logo500.png" alt="logo">
+            </picture>
+        </div>
     </header>
-
-    <main id="principal">
-        <section id="indent"><p >Adlucio Trindade Guimarães</p></section>
-        <section id="sobremim" class="container">
-            <article class="sb">
-                
+    <main class="container">
+        <article id="sobremim">
                 <div>
                     <picture>
                         <source media="(max-width: 550px)" srcset="imagens/minhafoto300.png" type="image/png">
                         <img id="minha-foto" src="imagens/lucio.png" alt="minha foto">
                     </picture>
-                    
+                
                 </div>
                 <div class="txtart">
                     <h2>Sobre mim</h2>
@@ -56,10 +47,9 @@
                     <img id="fotoif" class="fotomenor" src="imagens/ifam-logo.png" alt="">
                     <img class="fotomenor" src="imagens/martha-logo.png" alt="">
                 </div>
-            </article>
-            
-        </section>
-        <section id="projetos" class="container">
+        </article>
+    </main>
+     <main id="projetos" class="container">
             <article>
                 <h2>Meus Projetos</h2>
                 <picture>
@@ -68,14 +58,15 @@
                 </picture>
                 <h3>A Influencia da Massa Total em Foguetes Produzidos
                     de Garrafas PET em Lançamentos oblíquos </h3>
-                <p> O presente trabalho teve como objetivo demonstrar a influência da massa total no desempenho de um foguete de garrafa PET lançado obliquamente, pois muitos alunos do ensino médio, em todo o país, em particular no IFAM/CPA, participam anualmente da Mostra Brasileira de Foguetes, promovido pela Sociedade Brasileira de Astronomia e Astronáutica, na competição de lançamento de foguetes de garrafas PET’s a proporção química.</p>
+                <p> O presente trabalho teve como objetivo demonstrar a influência da massa total no desempenho de um foguete de garrafa PET              lançado obliquamente, pois muitos alunos do ensino médio, em todo o país, em particular no IFAM/CPA, participam anualmente da               Mostra Brasileira de Foguetes, promovido pela Sociedade Brasileira de Astronomia e Astronáutica, na competição de lançamento de               foguetes de garrafas PET’s a proporção química.</p>
                 <p>A pesquisa foi desenvolvida com apoio do software Modellus X, simulador computacional utilizado no ensino de Física, que deu praticidade ao estudo na manipulação das variáveis que influencia a massa do objeto para o lançamento.
-                </p>
+                </p><br>
                 <p><a target="_blank" href="documentos/A INFLUÊNCIA DA MASSA TOTAL EM FOGUETES PRODUZIDOS DE GARRAFAS PET EM LANÇAMENTOS OBLÍQUOS.pdf">Ver Artigo: Clique Aqui</a></p>
             </article>
-        </section>
-        <section  id="tecnologias" class="container">
-            <article>
+        </main>
+
+        <main  id="tecnologias" class="container">
+            <article id="tecgrid">
                 <h2>Tecnologias que utilizo</h2>
                 <div id="tecnologiasdiv">
 			<figure class="legenda">
@@ -152,12 +143,8 @@
 				</figcaption>
 			</figure>
             </article>
-        </section>
-        
-    </main>
-
-    <footer>
-        <section id="contato" class="container">
+        </main>
+        <main id="contato" class="container">
             <article>
                 <h2>Meus Contatos</h2>
                <ul id="contato-grid">
@@ -167,10 +154,11 @@
                <li><a target="_blank" href="https://instagram.com/adlucioguimaraes?igshid=ZDdkNTZiNTM="> <img src="contato/Instagram100.png" alt="Instagram"> Instagram</a></li>
                </ul>
             </article>
-        </section>
-        <p>Contato (92) 99326 - 0365 <br><a target="_blank" href="https://wa.me/qr/C4C63EUHRQFEN1"> Clique aqui para chamar no Whatsapp</a></p>
-        <p>&copy; Adlucio Trindade</p>
-    </footer>
-    <script src="script.js"></script>
+        </main>
+        <footer>
+            <p>Contato (92) 99326 - 0365 <br><a target="_blank" href="https://wa.me/qr/C4C63EUHRQFEN1"> Clique aqui para chamar no Whatsapp</a></p>
+            <p>&copy; Adlucio Trindade</p>
+        </footer>
+
 </body>
 </html>
