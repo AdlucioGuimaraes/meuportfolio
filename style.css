@@ -1,174 +1,149 @@
 /*
-Author: Adlucio Guimaraes
+Author: Adlucio;
 */
 @charset "UTF-8";
 @font-face {
-    font-family: 'Gagalin';
-    src: url("gagalin/Gagalin-Regular.otf") format('opentype');
+    font-family: 'dream';
+    src: url(fonte/Dream-Avenue.ttf) format('truetype');
 }
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@font-face {
+    font-family: 'TT';
+    src: url("fonte/TTDrugs-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'gagalin';
+    src: url("fonte/TTDrugs-Regular.ttf") format('truetype');
+}
 *{
     margin: 0;
-}
-:root{
-    --fontU: Ubuntu;
-    --fontG: 'Gagalin', sans-serif;
-    --cor-logo: #38b6ff;
+    padding: 0;
 }
 body{
-    background-color: var(--cor-logo);
-    font-family: var(--fontG);
-}
-#menu a{
-    border: 3px solid white;
-    color: white;
-    text-decoration: none;
-    background-color: var(--cor-logo);
-    padding: 10px;
-    border-radius: 30px;
-    float: right;
-    margin-right: 10px;
-}
-#menu{
-    margin-top: -10px;
-    width: 100%;
-    padding: 5px;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.312);
-}
-header{
-    padding-bottom: 10%;
-    font-family: var(--fontG);
     background-color: black;
     color: white;
-    padding-top: 5px;
 }
-#container-header{
-    display: grid;
-    grid-template-columns: 50% 50%;
+header{
+    position: fixed;
 }
-
-.nome-principal{
-    text-align: center;
-    margin-top: 30%;
-    
+nav{
+    width: 100%;
+    position: relative;
 }
-#saud{
-    font-weight: lighter;
-    font-size: 5em;
+nav a{
+    font-size: 1.5em;
+    background: linear-gradient(to top, #2d98ca4b,black, black);
+    text-decoration: none;
+    color: white;
+    transition: 1s;
 }
-#meunome{
-    color: yellow;
-    text-shadow: 2px 2px 2px var(--cor-logo);
-}
-#func{
-    color: aqua;
-}
-#container-header picture{
-    text-align: center;
-    margin-top: 15%;
-}
-header img{
-    border: 1px solid rgba(255, 255, 255, 0.193);
-    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.455);
-    border-radius: 30px;
-    max-width: 1040px;
-}
-.container{
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
+nav a:hover{
+    font-size: 1.6em;
+    background: linear-gradient(to top, #2d98ca4b,black, black);
+    color: rgb(27, 172, 194);
+    transition: 1s;
 }
 h1{
-    font-family: var(--fontG);
+    font-size: 6em;
+    font-family: 'dream';
+    font-weight: lighter;
 }
-article{
-    background-color: white;
-    border-radius: 30px;
-    padding: 20px;
+#principal h1{
+    margin-left: 30px;
+    margin-top: -100px;
+    font-size: 7em;
+    width: 50px;
+}
+#principal img{
+    position:unset;
+}
+#cont img{
+    height: 300px;
+    max-width: 300px;
+}
+.container{
+    display: flex;
+}
+.child{
+    width: 50%;
+}
+
+h2{
+    margin-top: 50px;
+    font-family: 'TT';
+    font-weight: lighter;
+    text-transform: uppercase;
+    width: 380px;
+    text-align: justify;
+}
+P{
+    color: #ABA9A8;
+    font-family: 'TT';
+    text-align: justify;
+}
+.container p{
+    margin-top: 30px;
+    width: 350px;
+}
+#tec{
+    height: 300px;
+    margin-top: -120px;
+    position:relative;
+   float: right;
+}
+#sobremim p{
+    width: 400px;
 }
 #sobremim{
-    display: grid;
-    grid-template-columns: 50% 50%;
+    margin-left: 50px;
+    display:flex;
 }
 #sobremim img{
-    border-radius: 30px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin-top: 120px;
+    border: 1px solid white;
 }
-.txtart{
-    text-align: center;
-    margin-left: 30px;
-}
-h2{
-    margin-bottom: 8%;
-}
-main p{
-    text-indent: 30px;
-    text-align: justify;
-    font-family: var(--fontU);
-    font-size: 1.2em;
+.text{
+    margin-top: 100px;
 }
 #projetos{
-    margin-top: 40px;
-    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+#projetos .text{
+    width: 2000px;
+    margin-top: -40px;
+    margin-left: 200px;
 }
 #projetos a{
     color: red;
 }
-#tecnologias{
-    margin-top: 40px;
-    text-align: center;
+#projetos #tec{
+    margin-top: -240px;
 }
-#tecnologiasdiv{
-    display: grid;
-    grid-template-columns: 27% 22% 22% 22%;
-
-}
-#tecnologiasdiv img{
-    border-radius: 20px;
-    border: 1px solid black;
-}
-#contato{
-    text-align: center;
-    margin-top: 40px;
+#contato h2{
+    font-family: 'dream';
+    font-size: 2em;
 }
 #contato a{
-    text-decoration: none;
-    color: black;
+    color: red;
 }
-#contato ul{
-    list-style: none;
-}
-#contato li{
+section p{
+    margin: 0;
     display: inline;
 }
 footer{
-    margin-top: 40px;
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 40px;
+    margin-top: 100px;
 }
 footer p{
-    font-size: 1.3em;
+    text-align: center;
 }
-footer a{
-    color: yellow;
-}
-@media(min-width: 500px){
-    main{
-        text-align: center;
-        padding: 30px;
-    }
-    main article{
-        border-radius: 20px;
-    }
-    #tecnologiasdiv{
+@media(max-width:500px){
+    .container{
         display: block;
     }
-    .txtart{
-        margin-left: 0;
-    }
-    #menu a{
-        font-size: 1em;
+    #principal h1{
+        text-align: center;
+        font-size: 5em;
     }
 }
